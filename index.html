@@ -1,504 +1,243 @@
 <!DOCTYPE html>
-<html>
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="./img/favicon/site.webmanifest" />
-  <link type="text/css" rel="stylesheet" id="dark-mode-custom-link" />
-  <link type="text/css" rel="stylesheet" id="dark-mode-general-link" />
-  <style lang="en" type="text/css" id="dark-mode-custom-style"></style>
-  <style lang="en" type="text/css" id="dark-mode-native-style"></style>
-  <style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
-
+<html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>KZN.Collective</title>
-
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/w3.css" />
-    <link rel="stylesheet" href="./css/css.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    <meta
+      name="description"
+      content="KZN.Collective, also known as KZN Collective, is a small MX-5 parts store focused on useful upgrades, clear fitment, and owner-tested products."
     />
-
-    <style>
-      body,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Lato", sans-serif;
-      }
-
-      body,
-      html {
-        height: 100%;
-        color: #444444;
-        line-height: 1.8;
-        scroll-behavior: smooth;
-      }
-
-      /* Create a Parallax Effect */
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3 {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      /* First image (Logo. Full height) */
-      .bgimg-1 {
-        background-image: url("./img/parallax1.jpg");
-        min-height: 100%;
-      }
-
-      /* Second image (Events) */
-      .bgimg-2 {
-        background-image: url("./img/parallax2.jpg");
-        min-height: 400px;
-      }
-
-      /* Third image (Contact) */
-      .bgimg-3 {
-        background-image: url("./img/parallax3.jpg");
-        min-height: 400px;
-      }
-
-      .w3-wide {
-        letter-spacing: 10px;
-      }
-
-      .w3-hover-opacity {
-        cursor: pointer;
-      }
-
-      /* Turn off parallax scrolling for tablets and phones */
-      @media only screen and (max-device-width: 1600px) {
-        .bgimg-1,
-        .bgimg-2,
-        .bgimg-3 {
-          background-attachment: scroll;
-          min-height: 400px;
-        }
-      }
-    </style>
-  </head>
-
-  <body data-new-gr-c-s-check-loaded="14.1195.0" data-gr-ext-installed="">
-    <!-- Navbar (sit on top) -->
-    <div class="w3-top">
-      <div class="w3-bar" id="myNavbar">
-        <a
-          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
-          href="javascript:void(0);"
-          onclick="toggleFunction()"
-          title="Toggle Navigation Menu"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
-        <a href="#home" class="w3-bar-item w3-button">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa fa-user"></i> ABOUT</a
-        >
-        <a href="#events" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa-regular fa-calendar"></i> EVENTS</a
-        >
-        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
-          ><i class="fa fa-envelope"></i> CONTACT</a
-        >
-        <a
-          href="#"
-          class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"
-        >
-          <i class="fa fa-search"></i>
-        </a>
-      </div>
-
-      <!-- Navbar on small screens -->
-      <div
-        id="navDemo"
-        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
-      >
-        <a
-          href="#about"
-          class="w3-bar-item w3-button"
-          onclick="toggleFunction()"
-          >ABOUT</a
-        >
-        <a
-          href="#events"
-          class="w3-bar-item w3-button"
-          onclick="toggleFunction()"
-          >EVENTS</a
-        >
-        <a
-          href="#contact"
-          class="w3-bar-item w3-button"
-          onclick="toggleFunction()"
-          >CONTACT</a
-        >
-        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-      </div>
-    </div>
-
-    <!-- First Parallax Image with Logo Text -->
-    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-      <div class="w3-display-middle" style="white-space: nowrap">
-        <span
-          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"
-          >KZN <span class="w3-hide-small"></span> COLLECTIVE</span
-        >
-      </div>
-    </div>
-
-    <!-- Container (About Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="about">
-      <h3 class="w3-center">ABOUT US</h3>
-      <p class="w3-center"><em>We love everything cars</em></p>
-      <br>
-        At <b>KZN Collective</b>, we’re more than just a car club—we’re a community driven 
-        by passion, innovation, and the love for all things automotive. Founded 
-        by enthusiasts, for enthusiasts, our mission is to bring together 
-        like-minded individuals who live for the thrill of the drive and the bond 
-        that car culture creates.
-        </br></br>
-        From exclusive meets and curated events to scenic drives and car showcases, KZN 
-        Collective is where connections are made, stories are shared, and automotive 
-        passion thrives. Whether you’re here to show off your ride, meet fellow car 
-        lovers, or simply fuel your love for the automotive world, you’ll find your 
-        place with us.
-        </br></br>
-        <b>Join the movement. Drive with us. Experience KZN Collective.</b>
-      </p>
-      <div class="w3-row">
-        <div class="w3-col m6 w3-center w3-padding-large">
-          <p>
-            <b><i class="fa fa-user w3-margin-right"></i>The Team</b>
-          </p>
-          <br />
-          <img
-            src="./img/the_team.jpg"
-            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
-            alt="Photo of the Team"
-            width="500"
-            height="333"
-          />
-        </div>
-
-        <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
-          <p>
-            <b>About the Team</b>
-            </br></br>
-            Behind KZN Collective is a group of passionate car enthusiasts who live and 
-            breathe automotive culture. We’re drivers, builders, creators, and 
-            visionaries—each bringing a unique set of skills to fuel the movement.
-            </br></br>
-            From organizing unforgettable events to building a thriving community, our 
-            team is dedicated to ensuring that KZN Collective is more than just a car 
-            club—it’s a lifestyle. We believe in the power of collaboration, constant 
-            improvement, and, most importantly, the shared love for cars that connects 
-            us all.
-            </br></br>
-            Whether we’re on the road, behind the scenes planning the next big event, or 
-            helping members showcase their rides, our team’s mission is simple: to create 
-            an inclusive space where car enthusiasts can connect, grow, and celebrate 
-            their passion.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">14+</span><br />
-        Meets
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2+</span><br />
-        Vendors
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br />
-        Members
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">2</span><br />
-        Sponsors
-      </div>
-    </div>
-
-    <!-- Second Parallax Image with Events Text -->
-    <div class="bgimg-2 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">EVENTS</span>
-      </div>
-    </div>
-
-    <!-- Container (Events Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="events">
-      <h3 class="w3-center">GALLERY</h3>
-      <p class="w3-center">
-        <em
-          >Here are some of our latest car events and meets<br />
-          Click on the images to make them bigger</em
-        >
-      </p>
-      <br />
-
-      <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-      <div class="w3-row-padding w3-center">
-        <div class="w3-col m3">
-          <img
-            src="./img/p1.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Miatas"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="./img/p2.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Mitsubishi"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="./img/p3.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Engine Bay"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="./img/p4.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="More Miatas"
-          />
-        </div>
-      </div>
-
-      <div class="w3-row-padding w3-center w3-section">
-        <div class="w3-col m3">
-          <img
-            src="./img/p5.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Trueno"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="./img/p6.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Underglow"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="./img/p7.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Blue and Red Miatas"
-          />
-        </div>
-
-        <div class="w3-col m3">
-          <img
-            src="./img/p8.jpg"
-            style="width: 100%"
-            onclick="onClick(this)"
-            class="w3-hover-opacity"
-            alt="Night Meet"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal for full size images on click-->
-    <div
-      id="modal01"
-      class="w3-modal w3-black"
-      onclick="this.style.display=&#39;none&#39;"
-    >
-      <span
-        class="w3-button w3-large w3-black w3-display-topright"
-        title="Close Modal Image"
-        ><i class="fa fa-remove"></i
-      ></span>
-      <div
-        class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"
-      >
-        <img id="img01" class="w3-image" />
-        <p id="caption" class="w3-opacity w3-large"></p>
-      </div>
-    </div>
-
-    <!-- Third Parallax Image with Events Text -->
-    <div class="bgimg-3 w3-display-container w3-opacity-min">
-      <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-      </div>
-    </div>
-
-    <!-- Container (Contact Section) -->
-    <div class="w3-content w3-container w3-padding-64" id="contact">
-      <h3 class="w3-center">OUR HQ!</h3>
-      <p class="w3-center"><em>We'd love your feedback!</em></p>
-
-      <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-          <img
-            src="./img/map.jpg"
-            class="w3-image w3-round"
-            style="width: 100%"
-          />
-        </div>
-        <div class="w3-col m8 w3-panel">
-          <div class="w3-large w3-margin-bottom">
-            <i
-              class="fa fa-location-dot fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            St. Elizabeth, JM<br />
-            <i
-              class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            Phone: +00 151515<br />
-            <i
-              class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"
-            ></i>
-            Email: info@kzncollective.com<br />
-          </div>
-          <p>Leave us a note:</p>
-          <form
-            action="https://www.w3schools.com/action_page.php"
-            target="_blank"
-          >
-            <div class="w3-row-padding" style="margin: 0 -16px 8px -16px">
-              <div class="w3-half">
-                <input
-                  class="w3-input w3-border"
-                  type="text"
-                  placeholder="Name"
-                  required=""
-                  name="Name"
-                />
-              </div>
-              <div class="w3-half">
-                <input
-                  class="w3-input w3-border"
-                  type="text"
-                  placeholder="Email"
-                  required=""
-                  name="Email"
-                />
-              </div>
-            </div>
-            <input
-              class="w3-input w3-border"
-              type="text"
-              placeholder="Message"
-              required=""
-              name="Message"
-            />
-            <button
-              class="w3-button w3-black w3-right w3-section"
-              type="submit"
-            >
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer
-      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
-    >
-      <a href="#home" class="w3-button w3-light-grey"
-        ><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a
-      >
-      <div class="w3-xlarge w3-section">
-        <a style="text-decoration: none" 
-        href="https://www.facebook.com/profile.php?id=61566330921257">
-          <i class="fa-brands fa-facebook w3-hover-opacity"></i>
-        </a>
-        <a style="text-decoration: none"
-        href="https://www.instagram.com/kzn.collective/">
-          <i class="fa-brands fa-instagram w3-hover-opacity"></i>
-        </a>
-        <a style="text-decoration: none"
-        href="https://www.tiktok.com/@kzn.collective">
-          <i class="fa-brands fa-tiktok w3-hover-opacity"></i>
-        </a>
-        <a style="text-decoration: none"
-        href="#">
-          <i class="fa-brands fa-x-twitter w3-hover-opacity"></i>
-        </a>
-      </div>
-    </footer>
-
-    <script>
-      // Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
-
-      // Change style of navbar on scroll
-      window.onscroll = function () {
-        myFunction();
-      };
-      function myFunction() {
-        var navbar = document.getElementById("myNavbar");
-        if (
-          document.body.scrollTop > 100 ||
-          document.documentElement.scrollTop > 100
-        ) {
-          navbar.className =
-            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-        } else {
-          navbar.className = navbar.className.replace(
-            " w3-card w3-animate-top w3-white",
-            ""
-          );
-        }
-      }
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function toggleFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="KZN.Collective" />
+    <meta property="og:title" content="KZN.Collective | KZN Collective MX-5 Parts Store" />
+    <meta
+      property="og:description"
+      content="KZN.Collective is a small MX-5 parts store focused on useful upgrades, clear fitment, and owner-tested products."
+    />
+    <meta property="og:image" content="./img/hero-mx5-night-shop-generated.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="KZN.Collective | KZN Collective MX-5 Parts Store" />
+    <meta
+      name="twitter:description"
+      content="MX-5 parts without the guesswork. Useful upgrades, clear fitment, and owner-tested products."
+    />
+    <title>KZN.Collective | KZN Collective MX-5 Parts Store</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./css/store.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "KZN.Collective",
+        "alternateName": "KZN Collective",
+        "description": "A small MX-5 parts store focused on useful upgrades, clear fitment, and owner-tested products.",
+        "url": "https://kzncollective.com/",
+        "sameAs": [
+          "https://www.instagram.com/kzn.collective/",
+          "https://www.tiktok.com/@kzn.collective"
+        ]
       }
     </script>
+  </head>
+  <body class="home-page">
+    <div class="utility">
+      <div class="utility-inner">
+        <ul class="utility-list">
+          <li>UK dispatch</li>
+          <li>Fitment-first listings</li>
+          <li>Tested on an owner Mk1</li>
+        </ul>
+        <ul class="utility-actions">
+          <li>GBP</li>
+          <li>Account</li>
+          <li>Cart (0)</li>
+        </ul>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./index.html" aria-label="KZN.Collective home">
+          <img src="./img/kzn-logo-header-cropped.png" alt="KZN.Collective logo" />
+          <span>KZN Collective <small>MX-5 parts store</small></span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <ul class="nav-list">
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="#by-model">By Model</a></li>
+            <li><a href="#popular">New In</a></li>
+            <li><a href="./fitment-guides.html">Guides</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </nav>
+        <input class="search" type="search" placeholder="Search parts, models, guides..." />
+        <a class="cart-link" href="./shop.html">Cart (0)</a>
+        <details class="mobile-menu">
+          <summary>Menu</summary>
+          <div class="mobile-panel">
+            <a href="./shop.html">Shop</a>
+            <a href="#by-model">By Model</a>
+            <a href="#popular">New In</a>
+            <a href="./fitment-guides.html">Guides</a>
+            <a href="./about.html">About</a>
+          </div>
+        </details>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <div class="hero-copy-block">
+            <p class="jp-kicker">走る歓び。</p>
+            <h1>Drive More. Worry Less.</h1>
+            <p class="hero-copy">
+              Curated <strong>MX-5</strong> parts and small upgrades with clear fitment,
+              practical guides, and owner-tested confidence.
+            </p>
+            <div class="actions">
+              <a class="button red" href="./shop.html">Shop MX-5 Parts</a>
+              <a class="button" href="#by-model">Shop by Model</a>
+            </div>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item"><b>Built for MX-5</b><span>Useful parts for real MX-5s.</span></div>
+            <div class="trust-item"><b>Owner Tested</b><span>Checked on a real 1994 Mk1 Turbo.</span></div>
+            <div class="trust-item"><b>Install Support</b><span>Guides, notes, and troubleshooting.</span></div>
+            <div class="trust-item"><b>UK Dispatch</b><span>In-stock parts, packed and sent from the UK.</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap catalog-section">
+          <aside class="section-rail">
+            <p class="jp-kicker">Parts</p>
+            <h2>Featured Categories</h2>
+          </aside>
+          <div class="grid categories">
+            <article class="card">
+              <div class="card-media"><img src="./img/p3.jpg" alt="Lighting kits" /></div>
+              <div class="card-body"><span class="category-icon">01</span><h3>Lighting</h3><p>Dash bulbs, interior LEDs, number plate bulbs, and refresh kits.</p></div>
+            </article>
+            <article class="card">
+              <div class="card-media"><img src="./img/category-interior-product-placeholder.jpg" alt="Interior upgrades" /></div>
+              <div class="card-body"><span class="category-icon">02</span><h3>Interior</h3><p>Useful upgrades for comfort, storage, switches, trims, and daily use.</p></div>
+            </article>
+            <article class="card">
+              <div class="card-media"><img src="./img/category-3d-printed-parts-placeholder.jpg" alt="3D printed MX-5 parts" /></div>
+              <div class="card-body"><span class="category-icon">03</span><h3>3D Printed Parts</h3><p>Small-batch printed parts, designed around real MX-5 ownership.</p></div>
+            </article>
+            <article class="card">
+              <div class="card-media"><img src="./img/category-gauge-holders-product-placeholder.jpg" alt="Gauge holders" /></div>
+              <div class="card-body"><span class="category-icon">04</span><h3>Gauge Holders</h3><p>Mounting solutions for boost, oil pressure, temperature, and more.</p></div>
+            </article>
+            <article class="card">
+              <div class="card-media"><img src="./img/category-switch-blanks-product-placeholder.jpg" alt="Switch blanks" /></div>
+              <div class="card-body"><span class="category-icon">05</span><h3>Switch Blanks</h3><p>Tidy replacements for missing, worn, or unused dashboard switch slots.</p></div>
+            </article>
+            <article class="card">
+              <div class="card-media"><img src="./img/category-owner-bundle-flatlay-placeholder.jpg" alt="Owner bundles" /></div>
+              <div class="card-body"><span class="category-icon">06</span><h3>Owner Bundles</h3><p>Grouped upgrades for new owners, interior refreshes, and common fixes.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular">
+        <div class="wrap catalog-section">
+          <aside class="section-rail">
+            <p class="jp-kicker">Popular</p>
+            <h2>Popular Right Now</h2>
+            <a class="text-link" href="./shop.html">View all products</a>
+          </aside>
+          <div class="grid products" data-products data-limit="6"></div>
+        </div>
+      </section>
+
+      <section id="by-model">
+        <div class="wrap catalog-section">
+          <aside class="section-rail">
+            <p class="jp-kicker">Models</p>
+            <h2>Shop by MX-5 Model</h2>
+            <a class="text-link" href="./shop.html">Compare models</a>
+          </aside>
+          <div class="model-strip">
+            <a class="model-card" style="--image: url('./img/parallax1.jpg')" href="./shop.html"><b>NA / Mk1</b><span>1989-1997</span></a>
+            <a class="model-card" style="--image: url('./img/p7.jpg')" href="./shop.html"><b>NB / Mk2</b><span>1998-2000</span></a>
+            <a class="model-card" style="--image: url('./img/p2.jpg')" href="./shop.html"><b>NBFL / Mk2.5</b><span>2001-2005</span></a>
+            <a class="model-card" style="--image: url('./img/p5.jpg')" href="./shop.html"><b>NC / Mk3</b><span>2005-2015</span></a>
+            <a class="model-card" style="--image: url('./img/parallax3.jpg')" href="./shop.html"><b>ND / Mk4</b><span>2015+</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrap catalog-section">
+          <aside class="section-rail">
+            <p class="jp-kicker">Guides</p>
+            <h2>Guides & Fitment Notes</h2>
+            <a class="text-link" href="./fitment-guides.html">Explore more</a>
+          </aside>
+          <div class="journal-grid">
+            <article class="journal-card">
+              <img src="./img/p3.jpg" alt="Install guides" />
+              <div><h3>Install Guides</h3><p>Practical notes, photos, common issues, and straight answers.</p><a class="text-link" href="./fitment-guides.html">View guides</a></div>
+            </article>
+            <article class="journal-card">
+              <img src="./img/parallax1.jpg" alt="Fitment notes" />
+              <div><h3>Fitment Notes</h3><p>Clear model notes before you buy, with disclaimers where cars vary.</p><a class="text-link" href="./fitment-guides.html">Read notes</a></div>
+            </article>
+            <article class="journal-card">
+              <img src="./img/p8.jpg" alt="Product testing" />
+              <div><h3>Product Testing</h3><p>Where possible, parts are checked against our own 1994 Mk1 Turbo.</p><a class="text-link" href="./about.html">Our process</a></div>
+            </article>
+            <article class="journal-card">
+              <img src="./img/p5.jpg" alt="Behind the scenes" />
+              <div><h3>Behind the Scenes</h3><p>Useful parts, fitment checks, and build updates from the workshop.</p><a class="text-link" href="./about.html">Read story</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-band">
+        <div class="wrap">
+          <div class="trust-item"><b>UK Dispatch</b><span>In-stock parts, packed and sent from the UK.</span></div>
+          <div class="trust-item"><b>Fitment First</b><span>Clear model notes before you buy.</span></div>
+          <div class="trust-item"><b>Owner Tested</b><span>Checked on a real 1994 Mk1 Turbo.</span></div>
+          <div class="trust-item"><b>Install Support</b><span>Guides, notes, and simple troubleshooting.</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <a class="brand" href="./index.html"><img src="./img/kzn-logo-header-cropped.png" alt="KZN.Collective logo" /><span>KZN Collective <small>MX-5 parts store</small></span></a>
+          <p>Built for MX-5 owners who care about fitment, quality, and useful little upgrades.</p>
+        </div>
+        <div><h3>Shop</h3><ul class="footer-links"><li><a href="./shop.html">All products</a></li><li><a href="./shop.html">New in</a></li><li><a href="./shop.html">Top sellers</a></li><li><a href="./shop.html">Owner bundles</a></li></ul></div>
+        <div><h3>By Model</h3><ul class="footer-links"><li><a href="./shop.html">NA / Mk1</a></li><li><a href="./shop.html">NB / Mk2</a></li><li><a href="./shop.html">NBFL / Mk2.5</a></li><li><a href="./shop.html">NC / Mk3</a></li><li><a href="./shop.html">ND / Mk4</a></li></ul></div>
+        <div><h3>Help</h3><ul class="footer-links"><li><a href="./shipping-returns.html">Shipping info</a></li><li><a href="./shipping-returns.html">Returns</a></li><li><a href="./faq.html">FAQs</a></li><li><a href="./contact.html">Contact us</a></li></ul></div>
+        <div><h3>About</h3><ul class="footer-links"><li><a href="./about.html">Our story</a></li><li><a href="./fitment-guides.html">Guides</a></li><li><a href="./about.html">Testing notes</a></li><li><a href="./contact.html">Support</a></li></ul></div>
+        <form data-newsletter>
+          <h3>Stay in the loop</h3>
+          <p>New parts, guide drops, and small-batch restocks. Straight to your inbox.</p>
+          <div class="newsletter">
+            <input type="email" required placeholder="Enter your email" />
+            <button class="mini-button" type="submit">Join</button>
+          </div>
+          <p data-newsletter-message></p>
+        </form>
+      </div>
+      <div class="footer-bottom">&copy; 2026 KZN Collective. MX-5 parts without the guesswork.</div>
+    </footer>
+
+    <script src="./js/products.js"></script>
+    <script src="./js/store.js"></script>
   </body>
 </html>
